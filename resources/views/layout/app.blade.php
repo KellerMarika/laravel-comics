@@ -27,6 +27,7 @@
     @yield('main')
 
 
+
     @include('partials.footer')
     @include('partials.bottomBunner')
 </body>

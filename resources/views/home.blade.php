@@ -19,7 +19,7 @@
                         
                     @endphp
 
-                    <div class="col" v-for="(comic) in comics">
+                    <div class="col">
 
                         <div class="dc-card text-start">
 
@@ -36,5 +36,6 @@
             <button class="btn btn-primary text-light text-uppercase rounded-0 fw-bold py-2 px-5">load more</button>
         </div>
     </article>
+    @include('partials.header')
 @endsection
 

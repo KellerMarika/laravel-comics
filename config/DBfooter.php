@@ -1,6 +1,6 @@
 <?php
 
-/* FOOTER COL 1 */
+#* FOOTER COL 1 *#
 
 return [
 
@@ -8,41 +8,41 @@ return [
     "dc comic" => [
       [
         "name" => "characters",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "comics",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "movies",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "tv",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "games",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "videos",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "news",
-        "href" => "/",
+        "href" => "#",
       ],
     ],
     "shop" => [
       [
         "name" => "shop DC",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "shop DC collectibles",
-        "href" => "/",
+        "href" => "#",
       ],
     ]
   ],
@@ -52,47 +52,47 @@ return [
     "dc" => [
       [
         "name" => "therms of use",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "privacy policy (new)",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "ad choice",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "advertising",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "jobs",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "subscriptions",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "talent workshops",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "cpsc certificates",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "rating",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "shop help",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "contact us",
-        "href" => "/",
+        "href" => "#",
       ],
     ]
   ],
@@ -100,23 +100,23 @@ return [
     "sites" => [
       [
         "name" => "dc",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "med magazine",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "dc kids",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "dc universe",
-        "href" => "/",
+        "href" => "#",
       ],
       [
         "name" => "dc power visa",
-        "href" => "/",
+        "href" => "#",
       ],
     ]
   ]

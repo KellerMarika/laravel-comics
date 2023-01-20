@@ -2,28 +2,28 @@
 return [
   [
     "name" => "footer-facebook",
-    "href" => "/",
+    "href" => "#",
     "format" => "png"
   ],
   [
     "name" => "footer-periscope",
-    "href" => "/",
+    "href" => "#",
     "format" => "png"
   ],
   [
     "name" => "footer-pinterest",
-    "href" => "/",
+    "href" => "#",
     "format" => "png"
   ],
   [
     "name" => "footer-twitter",
-    "href" => "/",
+    "href" => "#",
     "format" => "png"
 
   ],
   [
     "name" => "footer-youtube",
-    "href" => "/",
+    "href" => "#",
     "format" => "png"
 
   ]
