@@ -1,14 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
 
-* {
-  border: 1px solid red;
-}
 
 //variables
 
 $primary: #0282f9;
 $secondary: #303030;
-$secondary_light: #797979;
+$secondary_light: #797979 
+;
 $dark: #1c1c1c;
 $light: #ffffff;
 
@@ -36,43 +34,41 @@ $spacer_1: (
 body {
   font-family: 'Roboto',
     sans-serif;
-  ;
-}
 
-a {
-
-  /*   color: $secondary */
-  text-decoration: none;
 }
 
 /* NAVBAR */
-.nav-logo {
-  width: 80px;
+nav{
+  .nav-logo {
+    width: 80px;
+  }
+  
+  a {
+    font-size: .75rem;
+    font-weight: 800;
+    color: $secondary;
+    text-decoration: none;
+  
+    &:hover,
+    &:active {
+      color: $primary
+    }
+  
+    .link-underline {
+      margin-bottom: -1.5rem;
+      background-color: $secondary;
+      height: 6px;
+      width: 0px;
+      transition: all .3s;
+    }
+  
+    &:hover .link-underline {
+      background-color: $primary;
+      width: 100%;
+    }
+  }
 }
 
-a {
-  font-size: .75rem;
-  font-weight: 800;
-  color: $secondary;
-
-  &:hover,
-  &:active {
-    color: $primary
-  }
-
-  .link-underline {
-    margin-bottom: -1.5rem;
-    background-color: $secondary;
-    height: 6px;
-    width: 0px;
-    transition: all .3s;
-  }
-
-  &:hover .link-underline {
-    background-color: $primary;
-    width: 100%;
-  }
-}
 
 /* MAIN  */
 .jumbotron {
@@ -106,23 +102,23 @@ a {
   .list-group-item {
     flex-basis: calc(100% / 5
     );
-}
+  }
 
-a {
-  color: $light;
-}
+  a{
+    color: $light;
+  }
 
-.link-img {
-  max-height: 70px;
-  max-width: 70px;
-  padding-right: $spacer_1;
-}
+  .link-img {
+    max-height: 70px;
+    max-width: 70px;
+    padding-right: $spacer_1;
+  }
 }
 
 /* FOOTER */
 .bg-footer {
   a {
-    color: $secondary_light;
+    color: $secondary_light !important;
     text-transform: capitalize;
     font-size: small;
   }
@@ -141,6 +137,9 @@ a {
 }
 
 /* BOTTOM BUNNER */
+.BottomBunner{
+  background-color: $secondary;
+}
 .login-btn {
   border: 2px solid $primary;
 }

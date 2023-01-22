@@ -1,6 +1,6 @@
 <article class="top-bunner py_l">
     <div class="container">
-      
+
         <ul class="list-group-flush d-flex justify-content-around  align-items-center m-0 p-0">
 
             @foreach ($topBunnerLinks as $key => $link)

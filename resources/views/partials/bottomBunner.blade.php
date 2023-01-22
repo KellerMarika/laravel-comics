@@ -1,4 +1,4 @@
-<article class="bg-secondary">
+<article class="BottomBunner">
     <div class="container d-flex align-items-center py_m">
 
         <button class="login-btn text-uppercase text-light bg-transparent border-primary p-2"> sing-up now!</button>
