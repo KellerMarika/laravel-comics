@@ -15,19 +15,18 @@
             <div class="row row-cols-6">
 
                 @foreach ($comics as $key => $comic)
-                    @php
-                        
-                    @endphp
-
                     <div class="col">
+                        <a href="/comicOverview" class="text-decoration-none text-light">
+                            {{-- al click assegno a $comicIndexPassedOnClick il valore dell'index del comic cliccato POST ($key)  --}}
+                            <div class="dc-card text-start">
 
-                        <div class="dc-card text-start">
-
-                            <div class="dc-card-img">
-                                <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                                <div class="dc-card-img">
+                                    <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                                </div>
+                                <h6 class="text-uppercase small py-3">{{ $comic['series'] }}</h6>
                             </div>
-                            <h6 class="text-uppercase small py-3">{{ $comic['series'] }}</h6>
-                        </div>
+                        </a>
+                        
                     </div>
                 @endforeach
 
@@ -36,6 +35,4 @@
             <button class="btn btn-primary text-light text-uppercase rounded-0 fw-bold py-2 px-5">load more</button>
         </div>
     </article>
-
 @endsection
-
