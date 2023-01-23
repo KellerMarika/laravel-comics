@@ -1,12 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
 
-
 //variables
-
+/* *{border:1px solid red} */
 $primary: #0282f9;
 $secondary: #303030;
-$secondary_light: #797979 
-;
+$secondary_light: #797979;
+$success: #55ba59;
+
 $dark: #1c1c1c;
 $light: #ffffff;
 
@@ -37,23 +37,37 @@ body {
 
 }
 
+.bg-primary-light {
+  background-color: #00a9d9;
+}
+
+.text-primary-light {
+ color: #61c3e3;
+}
+.text-primary-dark {
+ color: #1c639d;
+}
+.bg-success-light {
+  background-color: #55ba59;
+}
+
 /* NAVBAR */
-nav{
+nav {
   .nav-logo {
     width: 80px;
   }
-  
+
   a {
     font-size: .75rem;
     font-weight: 800;
     color: $secondary;
     text-decoration: none;
-  
+
     &:hover,
     &:active {
       color: $primary
     }
-  
+
     .link-underline {
       margin-bottom: -1.5rem;
       background-color: $secondary;
@@ -61,7 +75,7 @@ nav{
       width: 0px;
       transition: all .3s;
     }
-  
+
     &:hover .link-underline {
       background-color: $primary;
       width: 100%;
@@ -102,17 +116,17 @@ nav{
   .list-group-item {
     flex-basis: calc(100% / 5
     );
-  }
+}
 
-  a{
-    color: $light;
-  }
+a {
+  color: $light;
+}
 
-  .link-img {
-    max-height: 70px;
-    max-width: 70px;
-    padding-right: $spacer_1;
-  }
+.link-img {
+  max-height: 70px;
+  max-width: 70px;
+  padding-right: $spacer_1;
+}
 }
 
 /* FOOTER */
@@ -137,9 +151,21 @@ nav{
 }
 
 /* BOTTOM BUNNER */
-.BottomBunner{
+.BottomBunner {
   background-color: $secondary;
 }
+
 .login-btn {
   border: 2px solid $primary;
+}
+
+/* CARDOVERVIEW_____________________ */
+.comic-card-overview {
+  .img-container {
+    top: -380px;
+  }
+
+  .comic-info{
+    background-color:#f6f6f6;
+  }
 }

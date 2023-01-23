@@ -13,27 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name("home");
 
 Route::get("/", function () {
-    // Devo recuperare la lista dei post.
-    // Normalmente li leggeremo dal nostro DB.
 
-    // SOLO temporaneamente creiamo degli array interni o usiamo il config();
     $headerNav = config("DBheaderNav");
     $topBunner = config("DBtopBunner");
     $comics= config("DBcomics");
     $footer = config("DBfooter");
     $bottomBunner = config("DBbottomBunnerSocial");
  
-
-
-
-
-    // Siccome lo scopo della funzione è rispondere al browser,
-    // questa DEVE ritornare qualcosa.
     return view("home", [
 
 
@@ -44,3 +32,24 @@ Route::get("/", function () {
         "bottomBunnerLinks" =>  $bottomBunner,
     ]);
 })->name("home");
+
+Route::get("/comicOverview", function () {
+
+    $headerNav = config("DBheaderNav");
+    $topBunner = config("DBtopBunner");
+    $comics= config("DBcomics");
+    $footer = config("DBfooter");
+    $bottomBunner = config("DBbottomBunnerSocial");
+    $comicIndexPassedOnClick = 0;
+ 
+    return view("comicOverview", [
+
+
+        "navLinks" =>$headerNav,
+        "comics" => $comics,
+        "topBunnerLinks" => $topBunner,
+        "footerLinks" => $footer,
+        "bottomBunnerLinks" =>  $bottomBunner,
+        "comicIndex"=>$comicIndexPassedOnClick,
+    ]);
+})->name("comicOverview");

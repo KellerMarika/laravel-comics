@@ -36,6 +36,6 @@
             <button class="btn btn-primary text-light text-uppercase rounded-0 fw-bold py-2 px-5">load more</button>
         </div>
     </article>
-    @include('partials.topBunner')
+
 @endsection
 
